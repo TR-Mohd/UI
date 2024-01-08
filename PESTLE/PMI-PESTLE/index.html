@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMA Analytics</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <!-- <link rel="stylesheet" href="../../Libraries/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">PMI</a></div>
+        <ul>
+            <li>Notifications <i class="fa-solid fa-caret-down"></i></li>
+            <li class="btn" id="profile-btn" onclick="toggle_profile_option()">Mohammed <i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+    </nav>
+    <div id="users">
+        <div class="header"><span>Users</span></div>
+        <hr>
+        <div class="users-list">
+            <div class="user">
+                <img src="assets/images/M.Aatef.jpg">
+                <span>M. Aatef</span>
+            </div>
+            <div class="user">
+                <img src="assets/images/saif.jpg">
+                <span>Saif Alhakimi</span>
+            </div>
+            <div class="user">
+                <img src="assets/images/M.Almahdi.png">
+                <span>M. Almahdi</span>
+            </div>
+            <hr>
+        </div>
+        <div class="profile-options">
+            <div class="option">
+                <div class="icon"><i class="fa-solid fa-user"></i></div>
+                <p>Edit profile</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="option">
+                <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                <p>Sitting & privacy</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="option">
+                <div class="icon"><i class="fa-solid fa-circle-question"></i></div>
+                <p>Help & support</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="option">
+                <div class="icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+                <p>Edit profile</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="sideBar">
+            <h2>Menu</h2>
+            <button id="PM-btn" class="btn" onclick="toggle_PM_menu()">Project Management <i class="fa-solid fa-caret-right"></i></button>
+            <ul id="PM-options">
+                <li><a href="#">Course</a></li>
+                <li id="RA-btn" class="btn" onclick="toggle_RA_menu()">Risk Assessment <i class="fa-solid fa-caret-right"></i></li>
+                <ul id="RA-options">
+                    <li>PESTLE</li>
+                    <li>7S - Mackenzie</li>
+                </ul>
+                <li>Finance</li>
+                <li>Stakeholders</li>
+            </ul>
+            <button id="SCM-btn" class="btn" onclick="toggle_SCM_menu()">Supply Chain .M <i class="fa-solid fa-caret-right"></i></button>
+            <ul id="SCM-options">
+                <li><a href="#">Course</a></li>
+            </ul>
+            <button id="CRM-btn" class="btn" onclick="toggle_CRM_menu()">Customer Relationship .M <i class="fa-solid fa-caret-right"></i></button>
+            <ul id="CRM-options">
+                <li><a href="#">Course</a></li>
+            </ul>
+        </div>
+        <h2>PM | Risk Assessment | PESTLE</h2>
+        <div id="pestle_content">
+            <div class="table">
+                <div class="table_head">
+                    <div class="table_head_item">
+                        <h4>Desciption</h4>
+                    </div>
+                    <div class="table_head_item">
+                        <h4>Probity <i class="fa-solid fa-ellipsis-vertical"></i></h4>
+                    </div>
+                    <div class="table_head_item">
+                        <h4>Impact <i class="fa-regular fa-circle-question"></i></h4>
+                    </div>
+                    <div class="table_head_item">
+                        <h4>Degree <i class="fa-regular fa-circle-question"></i></h4>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+<script src="JS/script.js"></script>
+</html>
